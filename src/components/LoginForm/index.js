@@ -28,7 +28,7 @@ class LoginForm extends Component {
       expires: 30,
     })
     history.replace('/')
-  }    
+  }
 
   onSubmitFailure = errorMsg => {
     this.setState({showSubmitError: true, errorMsg})

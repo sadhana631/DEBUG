@@ -34,7 +34,7 @@ class LoginForm extends Component {
     this.setState({showSubmitError: true, errorMsg})
   }
 
-  submitForm = async event => {
+  onsubmitForm = async event => {
     event.preventDefault()
     const {username, password} = this.state
     const userDetails = {username, password}
@@ -113,7 +113,7 @@ class LoginForm extends Component {
           className="login-img"
           alt="website login"
         />
-        <form className="form-container" onSumit={this.submitForm}>
+        <form className="form-container" onSubmit={this.onsubmitForm}>
           <img
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
             className="login-website-logo-desktop-img"
